@@ -1,0 +1,72 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#box{
+	width: 100%;
+	/* height: 1200px; */
+	/* background: cornflowerblue; */
+}
+/* 头部样式 */
+header #logo{
+	background-image: -webkit-linear-gradient(left, #66ffff 10%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #66FFFF 90%);
+    background-size: 200% 100%;
+    animation: back 3s  linear infinite;
+}
+/* 背景移动效果 */
+@keyframes back {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+header #logo img:nth-child(1){
+	width: 100px;
+	height: 27px;
+	margin: 10px;
+}
+header #logo .srch{
+    width: 25px;
+    margin: 11px 10px;
+    float: right;
+    background:white url(../images/search.png) no-repeat;
+    background-size:25px;
+    height: 25px;
+    outline: none;
+    border:none;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+header #logo .newsr{
+    width: 100px;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+header #logo p{
+	float: right;
+	line-height: 47px;
+	margin-right: 10px;
+	font-size: 18px;
+}
+header #logo p a{
+	color: burlywood;
+	text-decoration: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(114, 235, 229);
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+footer a{
+    flex: 1;
+    float: left;
+}
+footer a img{
+    width: 50%;
+    margin:10px 25%;
+}

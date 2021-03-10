@@ -1,0 +1,48 @@
+
+/* 定义动画 */
+@keyframes an{
+	0%{
+
+	}
+	100%{
+		opacity: 0.5;
+	}
+}
+#banner img{
+	width: 100%;
+	animation: an 1s;
+}
+/* banner小圆点样式 */
+#banner ul{
+	width: 80px;
+	height: 15px;
+	display: flex;
+	justify-content: space-between;
+	margin:-30px auto;
+}
+#banner ul li{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-color: aquamarine;
+	border-radius: 50%;
+	list-style: none;
+	transition: all 0.2s;
+}
+/* 点击时改变小圆圈的样式 */
+#banner ul .newli{
+	width: 20px;
+	border-radius: 5px;
+	background-color: rgb(78, 209, 117);
+}
+#main #m-top{
+	background: url(../images/underline1.png) no-repeat left bottom,
+	url(../images/hot_img.png) no-repeat 5px;
+	background-size: 120%,5%;
+}
+#main #m-top h3{
+	margin: 25px 0px;
+	line-height: 60px;
+	padding-left: 25px;
+	/* border-left: tomato solid 15px; */
+}
